@@ -125,7 +125,7 @@ function cat_avatar($params) {
                 array('pluginName' => 'avatar', 'pluginHandler' => 'cat', 'params' => array('cat' => $cat?$cat:''), 'xparams' => array(), 'paginator' => array('page', 0, false)):
                 array('pluginName' => 'core', 'pluginHandler' => 'plugin', 'params' => array('plugin' => 'avatar', 'handler' => 'cat'), 'xparams' => array(), 'paginator' => array('page', 1, false));
 
-            $navigations = LoadVariables();
+            $navigations = LoadVariabless();
             $pages = generatePagination($pageNo, 1, $countPages, 10, $paginationParams, $navigations);
         }
 	
@@ -243,7 +243,7 @@ function set_avatar($params) {
 	}
 }
 
-function LoadVariables()
+function LoadVariabless()
 {
 	$tpath = locatePluginTemplates(array(':'), 'avatar', pluginGetVariable('avatar', 'localsource'), pluginGetVariable('avatar', 'localskin'));
 	return parse_ini_file($tpath[':'] . '/skins/variables.ini', true);
