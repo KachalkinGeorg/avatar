@@ -1,0 +1,20 @@
+;
+; Version description file for plugin @@ Next Generation CMS
+;
+ 
+ID: avatar
+Name: Аватары
+Version: 0.1
+Acts: ppages, news_full, news_short, news_search, static, news:show, plugin.uprofile, plugin.comments
+File: avatar.php
+Config: config.php
+Type: plugin
+Install: install.php
+Deinstall: uninstall.php
+Description: Выбор аватаров из списка
+Author: KachalkinGeorg
+Author_URI: 
+Icon: <i class='fa fa-universal-access fa-2x'></i>
+Title: Аватары
+Information: Возможность выбирать аватаров из списка загруженных на сервер файлов
+Preinstall: no
